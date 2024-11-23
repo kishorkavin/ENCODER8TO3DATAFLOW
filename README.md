@@ -39,18 +39,29 @@ Figure 02  Encoder 8 * 3
 /* write all the steps invloved */
 
 **PROGRAM**
+ENCODER
 
+odmule enc(a,b,c,y0,y1,y2,y3,y4,y5,y6,y7);
+input y0,y1,y2,y3,y4,y5,y6,y7;
+output a,b,c;
+assign a= ( y4 | y5 | y6 | y7);
+assign b= ( y2 | y3 | y6 | y7);
+assign c= ( y1 | y3 | y5 | y7);
+endmodule
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
-*/
+Developed by:kishore kavin .s
+
+RegisterNumber:24005324
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
+![WhatsApp Image 2024-11-23 at 19 56 45_7ad4c1a1](https://github.com/user-attachments/assets/d54ae9bc-985e-4c0c-91a4-cfd60699c348)
 
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+![WhatsApp Image 2024-11-23 at 19 56 45_f7a22a60](https://github.com/user-attachments/assets/378ada37-3a30-45c4-9495-9f5a45d09653)
 
 **RESULTS**
-
+t seems like you're asking about modeling the dataflow for an 8-to-3 encoder (a combinational digital circuit). An 8-to-3 encoder takes 8 input lines and outputs a 3-bit binary code corresponding to the active input line. 
 
 
 
